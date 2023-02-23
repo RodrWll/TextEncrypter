@@ -9,12 +9,24 @@
     padding-top: 10px;
     padding-left: 10px;
     width: 10%;
+    transition: 5ms;
+}
+.logo:hover{
+    width: 12%;
 }
 
 main{
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-left: 180px;
+}
+.text-area{
+    height: 400px;
+    border: none;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 2px;
+    text-transform: lowercase;
 }
 ::placeholder{
     color: #0A3871;
@@ -26,14 +38,12 @@ main{
     background: white;
     background-image: url(Muñeco.png);
     background-repeat: no-repeat;
+    background-position: center;
     border: none;
     border-radius: 32px;
     color: #0A3871;
     
-    width: 300px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
+    
     /* shadow */
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     margin-left: 98px;
@@ -47,7 +57,7 @@ main{
 .botones{
     display: flex;
     margin-top: 18px;
-    flex-direction: row;
+    /*flex-direction: row;*/
 }
 .btn-encriptar{
     background-color: #0A3871;
@@ -75,9 +85,10 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
+    margin-left: 120px;
     width: 336px;
-    margin-top: 402px;
+    margin-top: 565px;
+    position: absolute;
 }
 .informacion{
     color: #495057;
