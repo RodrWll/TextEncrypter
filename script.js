@@ -9,14 +9,10 @@ const mensaje = document.querySelector(".mensaje");
 // La letra "a" es convertida para "ai"
 // La letra "o" es convertida para "ober"
 // La letra "u" es convertida para "ufat"
+
 function btnEncrypt()
 {
-    
-    if(textArea.value == "")
-    {
-        mensaje.value = "No hay nada que encriptar"
-        mensaje.style.color = "Red"
-    }else
+    if(textArea.value != "")
     {
     const textEncrypted = encrypter(textArea.value);
     mensaje.value = textEncrypted;
@@ -26,10 +22,7 @@ function btnEncrypt()
 }
 function btnDecrypt()
 {
-    if(textArea.value == "")
-    {
-        mensaje.value = "No hay nada que desencriptar"
-    }else
+    if(textArea.value != "")
     {
     const textDecrypted = decrypter(textArea.value);
     mensaje.value = textDecrypted;
